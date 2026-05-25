@@ -3,7 +3,7 @@ import { z } from "zod";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { getServerEnv } from "./server-env";
 const DEFAULT_AI_URL = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
-const DEFAULT_AI_MODEL = "gemini-3.1-flash-lite";
+const DEFAULT_AI_MODEL = "gemini-3.5-flash-lite";
 
 const ParsedResumeSchema = z.object({
   name: z.string().nullable().optional(),
