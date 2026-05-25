@@ -15,4 +15,12 @@ export default defineConfig({
     tailwindcss(),
     tsConfigPaths(),
   ],
+  resolve: {
+    alias: {
+      https: "node:https",
+      http: "node:http",
+      url: "node:url",
+      fs: "node:fs",
+    },
+  },
 });
